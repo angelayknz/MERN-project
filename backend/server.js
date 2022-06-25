@@ -13,6 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/goals', require('./goalRoutes/goalRoutes'))
+app.use('/api/users', require('./goalRoutes/userRoutes'))
 
 app.use(errorHandler)
 
